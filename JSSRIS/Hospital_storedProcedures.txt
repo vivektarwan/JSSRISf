@@ -1,0 +1,9 @@
+﻿Procedure For Doctor Register
+
+
+create procedure sp_Doctorinfo(@name varchar(20),@loginid varchar(20),@password varchar(20),
+@depart varchar(20),@special varchar(20),@phone varchar(20),@address varchar(200),@email varchar(20))
+as
+begin
+insert into Doctorinfo values(@name,@loginid,@password,@depart,@special,@phone,@address,@email)
+end

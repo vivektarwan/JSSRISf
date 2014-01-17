@@ -1,0 +1,9 @@
+﻿Procedure For Doctor Register
+
+
+create procedure sp_hospital_doctorsignup(@name varchar(20),@loginid varchar(20),@password varchar(20),
+@department varchar(20),@specialization varchar(20),@phonenumber varchar(20),@address varchar(20),@email varchar(20))
+as
+begin
+insert into hospital_doctorsignup values(@name,@loginid,@password,@department,@specialization,@phonenumber,@address,@email)
+end
